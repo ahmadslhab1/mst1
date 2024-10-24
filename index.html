@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MST Team</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ÊÓÌםב ÇבÏÎזב</h1>
+        <form id="loginForm">
+            <input type="text" id="username" placeholder="ÇÓד ÇבדÓÊÎÏד" required>
+            <input type="password" id="password" placeholder="‗בדÉ ÇבדÑזÑ" required>
+            <select id="role">
+                <option value="admin">דÔÑÝ</option>
+                <option value="volunteer">דÊØזÚ</option>
+            </select>
+            <button type="submit">ÊÓÌםב ÇבÏÎזב</button>
+        </form>
+        
+        <button id="showRegisterForm">ÅהÔÇÁ ÍÓÇÈ ÌÏםÏ</button>
+        
+        <form id="registerForm" class="hidden">
+            <h2>ÊÓÌםב ÍÓÇÈ ÌÏםÏ</h2>
+            <input type="text" id="newUsername" placeholder="ÇÓד ÇבדÓÊÎÏד" required>
+            <input type="password" id="newPassword" placeholder="‗בדÉ ÇבדÑזÑ" required>
+            <select id="newRole">
+                <option value="admin">דÔÑÝ</option>
+                <option value="volunteer">דÊØזÚ</option>
+            </select>
+            <button type="submit">ÊÓÌםב</button>
+        </form>
+        
+        <div id="taskContainer" class="hidden">
+            <h2>ÇבזÙÇÆÝ ÇבדÊÇÍÉ</h2>
+            <div id="addTaskSection" class="hidden">
+                <input type="text" id="taskTitle" placeholder="ÚהזÇה ÇבדודÉ" />
+                <input type="text" id="taskDescription" placeholder="זÕÝ ÇבדודÉ" />
+                <button id="addTaskBtn">ÅÖÇÝÉ דודÉ</button>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ÚהזÇה ÇבדודÉ</th>
+                        <th>זÕÝ ÇבדודÉ</th>
+                        <th>ÊÇÑםÎ ÇבÅÖÇÝÉ</th>
+                        <th>ÊÇÑםÎ ÇבÊÓבםד</th>
+                        <th>ÇבדÊØזÚ</th>
+                        <th>ÞÈזב</th>
+                        <th>ÑÝÖ</th>
+                        <th>ÑÝÚ ÇבדבÝ</th>
+                        <th>ÊÍדםב</th>
+                        <th>ÊדÏםÏ ÇבדזÚÏ</th>
+                    </tr>
+                </thead>
+                <tbody id="taskItems">
+                    <!-- ÇבדוÇד ÓÊÖÇÝ והÇ -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
